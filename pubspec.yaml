@@ -35,6 +35,8 @@ dependencies:
   firebase_core: ^1.24.0
   firebase_storage: ^10.3.11
   image_picker: ^0.8.6
+  spider: ^4.0.0
+  flutter_svg: ^1.1.5
   get: ^4.6.5
   flutter:
     sdk: flutter
@@ -56,6 +58,7 @@ flutter:
   assets:
     - assets/logo/
     - assets/images/
+    - assets/svg/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:instagram_clone/routes.dart';
-import 'package:instagram_clone/screens/app-screens/home/home.dart';
+import 'package:instagram_clone/screens/app-screens/main.dart';
 
 import 'features/auth-features/auth/controller/auth_controller.dart';
 import 'firebase_options.dart';
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.active) {
           if (snapshot.hasData) {
-            return const HomeScreen();
+            return const AppMain();
           } else if (snapshot.hasError) {
             return Center(
               child: Text("${snapshot.error}"),
