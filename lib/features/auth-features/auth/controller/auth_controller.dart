@@ -20,7 +20,6 @@ class AuthController extends GetxController {
     _isLoading.value = true;
     if (formKey.currentState!.validate()) {
       formKey.currentState!.save();
-      inspect(loginModel.value);
       await _firebaseAuthMethods.login(loginModel.value);
     }
     _isLoading.value = false;
